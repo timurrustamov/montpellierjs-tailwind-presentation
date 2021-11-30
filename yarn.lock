@@ -2042,6 +2042,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-lottie@^1.2.6":
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@types/react-lottie/-/react-lottie-1.2.6.tgz#4f351dfdf5f93a46a3a9714fbb319f1e0f030eaf"
+  integrity sha512-fvGJHD7SeUdVESHo7f7erRnXkTWaa/6Mo5TB+R0/ieSftKoFspA4sMlF2qMH6BljXI7ehFJbBtrD5bzDxPCkGg==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*":
   version "17.0.35"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.35.tgz#217164cf830267d56cd1aec09dcf25a541eedd4c"
@@ -2837,6 +2844,14 @@ babel-preset-gatsby@^2.2.0:
     babel-plugin-transform-react-remove-prop-types "^0.4.24"
     gatsby-core-utils "^3.2.0"
     gatsby-legacy-polyfills "^2.2.0"
+
+babel-runtime@^6.26.0:
+  version "6.26.0"
+  resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
+  integrity sha1-llxwWGaOgrVde/4E/yM3vItWR/4=
+  dependencies:
+    core-js "^2.4.0"
+    regenerator-runtime "^0.11.0"
 
 backo2@^1.0.2, backo2@~1.0.2:
   version "1.0.2"
@@ -3690,6 +3705,11 @@ core-js-pure@^3.19.0:
   version "3.19.1"
   resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.19.1.tgz#edffc1fc7634000a55ba05e95b3f0fe9587a5aa4"
   integrity sha512-Q0Knr8Es84vtv62ei6/6jXH/7izKmOrtrxH9WJTHLCMAVeU+8TF8z8Nr08CsH4Ot0oJKzBzJJL9SJBYIv7WlfQ==
+
+core-js@^2.4.0:
+  version "2.6.12"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
+  integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
 
 core-js@^3.17.2:
   version "3.19.1"
@@ -7910,6 +7930,11 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
+lottie-web@^5.1.3:
+  version "5.8.1"
+  resolved "https://registry.yarnpkg.com/lottie-web/-/lottie-web-5.8.1.tgz#807e0af0ad22b59bf867d964eb684cb3368da0ef"
+  integrity sha512-9gIizWADlaHC2GCt+D+yNpk5l2clZQFqnVWWIVdY0LnxC/uLa39dYltAe3fcmC/hrZ2IUQ8dLlY0O934Npjs7Q==
+
 lower-case-first@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/lower-case-first/-/lower-case-first-1.0.2.tgz#e5da7c26f29a7073be02d52bac9980e5922adfa1"
@@ -10457,6 +10482,14 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
+react-lottie@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/react-lottie/-/react-lottie-1.2.3.tgz#8544b96939e088658072eea5e12d912cdaa3acc1"
+  integrity sha512-qLCERxUr8M+4mm1LU0Ruxw5Y5Fn/OmYkGfnA+JDM/dZb3oKwVAJCjwnjkj9TMHtzR2U6sMEUD3ZZ1RaHagM7kA==
+  dependencies:
+    babel-runtime "^6.26.0"
+    lottie-web "^5.1.3"
+
 react-refresh@^0.9.0:
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.9.0.tgz#71863337adc3e5c2f8a6bfddd12ae3bfe32aafbf"
@@ -10561,6 +10594,11 @@ regenerate@^1.4.2:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/regenerate/-/regenerate-1.4.2.tgz#b9346d8827e8f5a32f7ba29637d398b69014848a"
   integrity sha512-zrceR/XhGYU/d/opr2EKO7aRHUeiBI8qjtfHqADTwZd6Szfy16la6kqD0MIUs5z5hx6AaKa+PixpPrR289+I0A==
+
+regenerator-runtime@^0.11.0:
+  version "0.11.1"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
+  integrity sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==
 
 regenerator-runtime@^0.13.3, regenerator-runtime@^0.13.4:
   version "0.13.9"
@@ -12296,6 +12334,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+typescript@^4.5.2:
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.2.tgz#8ac1fba9f52256fdb06fb89e4122fa6a346c2998"
+  integrity sha512-5BlMof9H1yGt0P8/WF+wPNw6GfctgGjXp5hkblpyT+8rkASSmkUKMXrxR0Xg8ThVCi/JnHQiKXeBaEwCeQwMFw==
 
 unbox-primitive@^1.0.1:
   version "1.0.1"

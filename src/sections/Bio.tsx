@@ -88,14 +88,17 @@ const Bio = () => {
         </div>
       </div>
 
-      <Appear delay={5} className="absolute top-8 right-8 drop-shadow-2xl">
+      <motion.div
+        className="absolute top-4 right-4"
+        style={{ translateX: 32, opacity: 0 }}
+        whileInView={{ translateX: 0, opacity: 1, transition: { delay: 6 } }}>
         <StaticImage
           layout="constrained"
           className="w-24 -rotate-12"
           src="../images/gojob-logo.png"
           alt="Gojob"
         />
-      </Appear>
+      </motion.div>
     </Section>
   );
 };
