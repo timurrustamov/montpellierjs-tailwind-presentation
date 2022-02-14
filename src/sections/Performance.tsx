@@ -1,11 +1,8 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import Section from '../components/Section';
-import TailwindLogo from '../components/TailwindLogo';
 
-const easeOutCubic = (x: number) => {
-  return 1 - Math.pow(1 - x, 3);
-};
+const easeOutCubic = (x: number) => 1 - Math.pow(1 - x, 3);
 
 const Performance = () => {
   const [progress, setProgress] = useState(0);
@@ -53,10 +50,10 @@ const Performance = () => {
                   d="M6,32a26,26 0 1,0 52,0a26,26 0 1,0 -52,0"
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-dasharray="163.38575744628906px 163.38575744628906px"
-                  stroke-width="12"
-                  stroke-dashoffset="0px"
+                  strokeLinecap="round"
+                  strokeDasharray="163.38575744628906px 163.38575744628906px"
+                  strokeWidth="12"
+                  strokeDashoffset="0px"
                   animate={{
                     pathLength: isInViewport ? 1 : 0,
                     transition: { duration: 4.5 },
@@ -72,7 +69,7 @@ const Performance = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeDasharray="26.399829864501953px 26.399829864501953px"
-                  stroke-dashoffset="0px"
+                  strokeDashoffset="0px"
                   animate={{
                     opacity: isInViewport ? 1 : 0,
                     transition: { delay: 4.5 },

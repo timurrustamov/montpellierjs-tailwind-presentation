@@ -1,11 +1,14 @@
-import { FunctionComponent } from 'react';
 import Card from './Card';
 
-const Name: FunctionComponent = (props) => {
+interface NameProps {
+  children: string;
+}
+
+const Name = (props: NameProps) => {
   return <div className="mb-1 font-mono text-sm text-gray-400">{props.children}</div>;
 };
 
-const Shadows: FunctionComponent = () => {
+const Shadows = () => {
   return (
     <Card title="Typography">
       <ul className="grid grid-cols-2 gap-4">

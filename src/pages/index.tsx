@@ -1,5 +1,4 @@
 import { useScrollRestoration } from 'gatsby';
-import { FunctionComponent } from 'react';
 
 import Bio from '../sections/Bio';
 import Intro from '../sections/Intro';
@@ -17,14 +16,16 @@ import Conclusion from '../sections/Conclusion';
 import ClassicDesignWorkflow from '../sections/ClassicDesignWorkflow';
 import TailwindDesignWorkflow from '../sections/TailwindDesignWorkflow';
 import ThankYou from '../sections/ThankYou';
+import { Ref } from 'react';
 
-const Home: FunctionComponent = () => {
+const Home = () => {
   const scrollRestoration = useScrollRestoration('home');
 
   return (
     <main
-      className="h-full max-w-full overflow-hidden presentation"
-      {...(scrollRestoration as any)}>
+      ref={scrollRestoration.ref as Ref<HTMLElement>}
+      onScroll={scrollRestoration.onScroll}
+      className="h-full max-w-full overflow-hidden presentation">
       <AixJS />
       <Intro />
       <Bio />

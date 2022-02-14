@@ -1,9 +1,7 @@
-import { FunctionComponent } from 'react';
-
 import Section from '../components/Section';
 import { StaticImage } from 'gatsby-plugin-image';
 
-const TailwindDesignWorkflow: FunctionComponent = () => {
+const TailwindDesignWorkflow = () => {
   return (
     <Section
       id="classic-design-workflow"

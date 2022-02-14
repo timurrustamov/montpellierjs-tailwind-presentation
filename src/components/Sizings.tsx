@@ -1,12 +1,11 @@
 import classNames from 'classnames';
-import { FunctionComponent } from 'react';
 import Card from './Card';
 
 interface LineProps {
   width: string;
 }
 
-const Line: FunctionComponent<LineProps> = (props) => {
+const Line = (props: LineProps) => {
   return (
     <li className="flex items-center gap-2">
       <span className="font-mono text-sm text-gray-400">{props.width}</span>
@@ -16,7 +15,7 @@ const Line: FunctionComponent<LineProps> = (props) => {
   );
 };
 
-const Sizings: FunctionComponent = () => {
+const Sizings = () => {
   return (
     <Card title="Width">
       <ul className="space-y-4">

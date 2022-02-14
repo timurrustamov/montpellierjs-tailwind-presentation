@@ -1,12 +1,12 @@
-import React, { FunctionComponent, useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { StaticImage } from 'gatsby-plugin-image';
 
 import TailwindCSSCode from '../code/tailwind-css.mdx';
 import ImageCard from '../components/ImageCard';
 import Section from '../components/Section';
-import { StaticImage } from 'gatsby-plugin-image';
 
-const TailwindCSS: FunctionComponent = () => {
+const TailwindCSS = () => {
   const [showCode, setShowCode] = useState(false);
 
   const toggleShowCode = () => setShowCode(!showCode);

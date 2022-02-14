@@ -1,4 +1,3 @@
-import { FunctionComponent } from 'react';
 import Card from './Card';
 
 interface NameProps {
@@ -6,7 +5,7 @@ interface NameProps {
   to: string;
 }
 
-const Name: FunctionComponent<NameProps> = (props) => {
+const Name = (props: NameProps) => {
   return (
     <div className="flex justify-between w-full mb-1 font-mono text-sm text-gray-400">
       <span>{props.from}</span>
@@ -15,7 +14,7 @@ const Name: FunctionComponent<NameProps> = (props) => {
   );
 };
 
-const Colors: FunctionComponent = () => {
+const Colors = () => {
   return (
     <Card title="Colors">
       <ul className="space-y-2">

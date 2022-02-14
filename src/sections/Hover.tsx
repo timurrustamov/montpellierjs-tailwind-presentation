@@ -1,5 +1,3 @@
-import { FunctionComponent } from 'react';
-
 import Section from '../components/Section';
 import HoverCode from '../code/hover.mdx';
 
@@ -8,7 +6,7 @@ interface ProjectProps {
   squad: string;
 }
 
-const Project: FunctionComponent<ProjectProps> = (props) => {
+const Project = (props: ProjectProps) => {
   return (
     <button className="flex flex-col gap-1 p-4 transition-colors border border-gray-300 rounded-xl hover:bg-blue-500 focus:bg-blue-500 group">
       <p className="text-lg font-medium text-gray-600 transition-colors group-focus:text-gray-100 group-hover:text-gray-100">
@@ -21,7 +19,7 @@ const Project: FunctionComponent<ProjectProps> = (props) => {
   );
 };
 
-const Hover: FunctionComponent = () => {
+const Hover = () => {
   return (
     <Section
       id="hover-and-focus"

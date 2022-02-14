@@ -18,7 +18,6 @@ const Into = () => {
           whileInView={{
             scale: 1,
             opacity: 1,
-            rotate: [0, 1, -1, 0],
             transition: { type: 'spring', duration: 2, bounce: 0.6, delay: 1 },
           }}>
           A perfect bridge from <span className="text-green-400">Design</span> to{' '}

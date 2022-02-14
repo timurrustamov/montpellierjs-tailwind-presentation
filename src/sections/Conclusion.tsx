@@ -1,4 +1,4 @@
-import { FunctionComponent, useState } from 'react';
+import { useState } from 'react';
 import Lottie from 'react-lottie';
 
 import Section from '../components/Section';
@@ -6,7 +6,7 @@ import atomAnimationData from '../animation-data/atom.json';
 import TailwindLogo from '../components/TailwindLogo';
 import { motion } from 'framer-motion';
 
-const Atom: FunctionComponent = () => {
+const Atom = () => {
   return (
     <Lottie
       style={{ width: '100%', height: '100%' }}

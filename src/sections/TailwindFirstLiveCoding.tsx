@@ -1,5 +1,4 @@
 import Definition from '../components/Definition';
-
 import Section from '../components/Section';
 import TailwindLogo from '../components/TailwindLogo';
 

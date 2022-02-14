@@ -1,4 +1,4 @@
-import React, { FunctionComponent, ReactChildren, ReactElement, useMemo, useState } from 'react';
+import { ReactNode, useMemo, useState } from 'react';
 
 import Section from '../components/Section';
 import Sizings from '../components/Sizings';
@@ -15,9 +15,10 @@ import Shadows from '../components/Shadows';
 interface TabProps {
   active: boolean;
   onClick: () => void;
+  children: ReactNode;
 }
 
-const Tab: FunctionComponent<TabProps> = (props) => {
+const Tab = (props: TabProps) => {
   return (
     <li
       onClick={props.onClick}
@@ -32,7 +33,7 @@ const Tab: FunctionComponent<TabProps> = (props) => {
 
 type TabName = 'width' | 'colors' | 'typography' | 'shadows';
 
-const Utilities: FunctionComponent = () => {
+const Utilities = () => {
   const [activeTab, setActiveTab] = useState<TabName>('width');
 
   const Demo = useMemo(() => {

@@ -1,15 +1,14 @@
-import { FunctionComponent, useCallback } from 'react';
+import { ReactNode } from 'react';
 
 import classNames from 'classnames';
-import { motion } from 'framer-motion';
-import { navigate } from 'gatsby-link';
 
 interface SectionProps {
   id: string;
   className?: string;
+  children: ReactNode;
 }
 
-const Section: FunctionComponent<SectionProps> = (props) => {
+const Section = (props: SectionProps) => {
   return (
     <section id={props.id} className={classNames('section p-4', props.className)}>
       <a
@@ -17,6 +16,7 @@ const Section: FunctionComponent<SectionProps> = (props) => {
         className="absolute px-2 font-mono text-gray-400 opacity-50 top-4 left-4">
         ❡
       </a>
+
       {props.children}
     </section>
   );

@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { StaticImage } from 'gatsby-plugin-image';
 import Section from '../components/Section';
 
@@ -6,8 +7,20 @@ const AixJS = () => {
     <Section
       id="aixjs"
       className="flex items-center justify-center bg-gradient-to-br from-purple-800 via-purple-900 to-blue-900">
-      <div className="w-full max-w-xs mx-auto drop-shadow-xl">
-        <StaticImage src="../images/aixjs.png" alt="AixJS" layout="fullWidth" />
+      <div className="w-full h-full max-w-xs mx-auto drop-shadow-xl grid grid-flow-col grid-rows-3 place-items-center">
+        <StaticImage
+          className="row-span-2 w-full"
+          src="../images/aixjs.png"
+          alt="AixJS"
+          layout="fullWidth"
+        />
+
+        <motion.span
+          className="text-white text-7xl"
+          animate={{ translateY: [0, -5, 0] }}
+          transition={{ repeat: Infinity, bounce: 0.7, ease: 'easeInOut', times: [0, 0.7, 1] }}>
+          ↓
+        </motion.span>
       </div>
     </Section>
   );

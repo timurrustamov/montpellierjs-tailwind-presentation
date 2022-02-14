@@ -1,15 +1,16 @@
-import { FunctionComponent } from 'react';
 import { motion } from 'framer-motion';
 import { StaticImage } from 'gatsby-plugin-image';
+import { ReactNode } from 'react';
 
 import Section from '../components/Section';
 
 interface AppearProps {
   delay: number;
   className?: string;
+  children: ReactNode;
 }
 
-const Appear: FunctionComponent<AppearProps> = (props) => {
+const Appear = (props: AppearProps) => {
   return (
     <motion.div
       style={{ translateY: -32, opacity: 0 }}

@@ -1,4 +1,4 @@
-import { FunctionComponent, ReactElement } from 'react';
+import { ReactElement } from 'react';
 
 interface ImageCardProps {
   Image: ReactElement;
@@ -6,7 +6,7 @@ interface ImageCardProps {
   description: string;
 }
 
-const ImageCard: FunctionComponent<ImageCardProps> = (props) => {
+const ImageCard = (props: ImageCardProps) => {
   return (
     <div className="w-full max-w-screen-sm p-4 mx-auto">
       <div className="overflow-hidden bg-gray-800 rounded">

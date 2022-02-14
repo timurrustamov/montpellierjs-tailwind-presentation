@@ -15,14 +15,11 @@ body,
 }
 
 .presentation {
-  @apply h-full overflow-y-auto;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
+  @apply h-full overflow-y-auto snap-y snap-mandatory scroll-smooth;
 }
 
 .section {
-  @apply relative h-full;
-  scroll-snap-align: start;
+  @apply relative h-full snap-start;
 }
 
 .remark-highlight-code-line {
@@ -34,8 +31,8 @@ code.language-html {
 }
 
 .atom .core path {
-  fill: rgb(6, 182, 212);
-  stroke: rgb(6, 182, 212);
+  fill: theme('colors.tailwind');
+  stroke: theme('colors.tailwind');
 }
 
 .atom .spin path {
