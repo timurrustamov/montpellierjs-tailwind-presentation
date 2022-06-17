@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import Section from '../components/Section';
 import TailwindLogo from '../components/TailwindLogo';
-import UglyDefinition from '../components/UglyDefinition';
 
 const TailwindFirstIntro = () => {
   const [displayQuestions, setDisplayQuestions] = useState(false);
@@ -18,7 +17,13 @@ const TailwindFirstIntro = () => {
           <TailwindLogo className="h-10 md:h-24" /> tailwindcss
         </span>
 
-        <UglyDefinition />
+        <div className="p-4">
+          <p className="text-2xl font-light text-gray-300">
+            A <strong className="font-normal">utility-first CSS</strong> framework that can be
+            composed to build any{' '}
+            <strong className="font-normal text-red-500">design system</strong>.
+          </p>
+        </div>
 
         <motion.span className="text-8xl" animate={{ opacity: displayQuestions ? 1 : 0 }}>
           🤔

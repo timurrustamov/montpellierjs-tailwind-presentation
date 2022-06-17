@@ -9,8 +9,8 @@ const AixJS = () => {
       className="flex items-center justify-center bg-gradient-to-br from-purple-800 via-purple-900 to-blue-900">
       <div className="w-full h-full max-w-xs mx-auto drop-shadow-xl grid grid-flow-col grid-rows-3 place-items-center">
         <StaticImage
-          className="row-span-2 w-full"
-          src="../images/aixjs.png"
+          className="row-span-2 w-full drop-shadow-xl"
+          src="../images/monpellierjs.jpeg"
           alt="AixJS"
           layout="fullWidth"
         />

@@ -17,6 +17,10 @@ import ClassicDesignWorkflow from '../sections/ClassicDesignWorkflow';
 import TailwindDesignWorkflow from '../sections/TailwindDesignWorkflow';
 import ThankYou from '../sections/ThankYou';
 import { Ref } from 'react';
+import CuttingEdge from '../sections/CuttingEdge';
+import DesignSystem from '../sections/DesignSystem';
+import TailwindSecondIntro from '../sections/TailwindSecondIntro';
+import AtomicDesign from '../sections/AtomicDesign';
 
 const Home = () => {
   const scrollRestoration = useScrollRestoration('home');
@@ -30,14 +34,18 @@ const Home = () => {
       <Intro />
       <Bio />
       <TailwindFirstIntro />
+      <DesignSystem />
+      <AtomicDesign />
+      <TailwindSecondIntro />
       <ClassicCSS />
       <BemCSS />
       <TailwindCSS />
-      <TailwindFirstLiveCoding />
       <ClassicDesignWorkflow />
       <TailwindDesignWorkflow />
+      <TailwindFirstLiveCoding />
       <Utilities />
       <Hover />
+      <CuttingEdge />
       <Performance />
       <DemoTime />
       <Conclusion />
